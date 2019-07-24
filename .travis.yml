@@ -18,7 +18,7 @@ deploy:
       tags: true
   - provider: pages
     skip_cleanup: true
-    github_token: $GITHUB_TOKEN
+    github_token: $GITHUB_PAGES_TOKEN
     local_dir: /dist
     on:
       branch: master
