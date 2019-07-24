@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - '10'
+script: yarn build
+deploy:
+  provider: npm
+  email: $NPM_EMAIL
+  api_key: $NPM_TOKEN
+  on:
+    tags: true
