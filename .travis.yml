@@ -3,8 +3,15 @@ node_js:
   - '10'
 script: yarn build
 deploy:
-  provider: npm
-  email: $NPM_EMAIL
-  api_key: $NPM_TOKEN
-  on:
-    tags: true
+  - provider: npm
+    email: $NPM_EMAIL
+    api_key: $NPM_TOKEN
+    skip_cleanup: true
+    on:
+      tags: true
+  - provider: releases
+    api_key: $GITHUB_OAUTH_TOKEN
+    file: dist/*
+    skip_cleanup: true
+    on:
+      tags: true
