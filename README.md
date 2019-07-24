@@ -2,12 +2,12 @@
 
 A tiny promise based animation function implemented in vanilla JavaScript.
 
-👻 **3kb (1kb gzipped)**
-📦 **No dependencies**
-🌚 **TypeScript support**
-🕺 **Multiple built-in easings**
-🤝 **Promise based**
-⚙️ **Uses requestAnimationFrame**
+👻 **3kb (1kb gzipped)**  
+📦 **No dependencies**  
+🌚 **TypeScript support**  
+🕺 **Multiple built-in easings**  
+🤝 **Promise based**  
+⚙️ **Uses requestAnimationFrame**  
 🙅‍ **Cancelable**
 
 ## Installation
@@ -39,7 +39,7 @@ Download the latest release from
 | `from`     | `number`                                                  | Starting animation value                          | N/A                                                                                                                                                                                                       |
 | `to`       | `number`                                                  | Ending animation value                            | N/A                                                                                                                                                                                                       |
 | `duration` | `number`                                                  | Animation duration                                | N/A                                                                                                                                                                                                       |
-| `easing`   | `string` \|\| [`EasingFunction`](#custom-easing-functino) | Easing                                            | `linear`, `easeInQuad`, `easeOutQuad`, `easeInOutQuad`, `easeInCubic`, `easeOutCubic`, `easeInOutCubic`, `easeInQuart`, `easeOutQuart`, `easeInOutQuart`, `easeInQuint`, `easeOutQuint`, `easeInOutQuint` |
+| `easing`   | `string` \|\| [`EasingFunction`](#custom-easing-function) | Easing                                            | `linear`, `easeInQuad`, `easeOutQuad`, `easeInOutQuad`, `easeInCubic`, `easeOutCubic`, `easeInOutCubic`, `easeInQuart`, `easeOutQuart`, `easeInOutQuart`, `easeInQuint`, `easeOutQuint`, `easeInOutQuint` |
 | `update`   | `Function`                                                | Function with animation value passed as parameter | N/A                                                                                                                                                                                                       |
 
 ### Basic Usage
