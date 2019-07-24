@@ -1,0 +1,40 @@
+{
+  "name": "vanilla-js-animate",
+  "version": "1.0.0",
+  "description": "An vanilla js implementation of a function to animate an element",
+  "main": "dist/index.js",
+  "author": "Peter Hegman",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/es6-promise": "^3.3.0",
+    "@types/webpack-env": "^1.14.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "autoprefixer": "^9.6.1",
+    "css-loader": "^3.1.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.0.1",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "prettier": "1.18.2",
+    "pretty-quick": "^1.11.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.37.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
+  },
+  "scripts": {
+    "build": "rimraf dist && webpack --mode production",
+    "serve": "webpack-dev-server --hot --inline --mode development"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
