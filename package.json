@@ -1,6 +1,6 @@
 {
   "name": "animate-vanilla-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An vanilla js implementation of a function to animate an element",
   "main": "dist/index.js",
   "author": "Peter Hegman",
