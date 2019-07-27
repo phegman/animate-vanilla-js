@@ -5,7 +5,7 @@ module.exports = {
   output: {
     filename: 'index.js',
     libraryTarget: 'umd',
-    library: 'vanilla-js-animate',
+    library: 'animate-vanilla-js',
     umdNamedDefine: true
   }
 }
