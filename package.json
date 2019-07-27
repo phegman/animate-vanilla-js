@@ -2,7 +2,7 @@
   "name": "animate-vanilla-js",
   "version": "1.0.4",
   "description": "An vanilla js implementation of a function to animate an element",
-  "main": "dist/index.js",
+  "main": "dist/animate-vanilla-js-umd.js",
   "author": "Peter Hegman",
   "license": "MIT",
   "devDependencies": {

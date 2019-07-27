@@ -24,10 +24,10 @@ import animate from 'animate-vanilla-js'
 
 ### Script tag
 
-Download `browser.js` from the latest release here: [https://github.com/phegman/animate-vanilla-js/releases](https://github.com/phegman/animate-vanilla-js/releases)
+Download `animate-vanilla-js-browser.js` from the latest release here: [https://github.com/phegman/animate-vanilla-js/releases](https://github.com/phegman/animate-vanilla-js/releases)
 
 ```html
-<script type="text/javascript" src="browser.js"></script>
+<script type="text/javascript" src="animate-vanilla-js-browser.js"></script>
 ```
 
 ## Usage

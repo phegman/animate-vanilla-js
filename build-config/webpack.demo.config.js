@@ -7,7 +7,7 @@ module.exports = {
     index: './src/demo.ts'
   },
   output: {
-    filename: 'demo.js'
+    filename: 'animate-vanilla-js-demo.js'
   },
   module: {
     rules: [
