@@ -2,13 +2,13 @@
 
 A tiny promise based animation function implemented in vanilla JavaScript.
 
-👻 **3kb (1kb gzipped)**  
-📦 **No dependencies**  
-🌚 **TypeScript support**  
-🕺 **Multiple built-in easings**  
-🤝 **Promise based**  
-⚙️ **Uses requestAnimationFrame**  
-🙅‍ **Cancelable**
+- 👻 **3kb (1kb gzipped)**
+- 📦 **No dependencies**
+- 🌚 **TypeScript support**
+- 🕺 **Multiple built-in easings**
+- 🤝 **Promise based**
+- ⚙ **Uses requestAnimationFrame**
+- 🙅‍♂️ **Cancelable**
 
 ## Installation
 
@@ -29,6 +29,8 @@ Download `animate-vanilla-js-browser.js` from the latest release here: [https://
 ```html
 <script type="text/javascript" src="animate-vanilla-js-browser.js"></script>
 ```
+
+The animation function will then be usable via the global function `animateVanillaJs()`
 
 ## Usage
 
