@@ -29,7 +29,7 @@
     "webpack-merge": "^4.2.1"
   },
   "scripts": {
-    "build": "rimraf dist && webpack --mode production",
+    "build": "rimraf dist && webpack --mode production && mv dist/animate-vanilla-js.d.ts dist/animate-vanilla-js-umd.d.ts",
     "serve": "webpack-dev-server --hot --inline --mode development"
   },
   "husky": {

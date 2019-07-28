@@ -1,10 +1,11 @@
 module.exports = {
   entry: {
-    index: './src/index.ts'
+    index: './src/animate-vanilla-js.ts'
   },
   output: {
     filename: 'animate-vanilla-js-browser.js',
-    libraryTarget: 'window',
-    library: 'vanillaJsAnimate'
+    libraryTarget: 'var',
+    libraryExport: 'default',
+    library: 'animateVanillaJs'
   }
 }

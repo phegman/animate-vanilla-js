@@ -3,7 +3,7 @@ import Cancel from './interfaces/promise/cancel.interface'
 import Resolve from './interfaces/promise/resolve.interface'
 import CancelHandler from './interfaces/promise/cancel-handler.interface'
 
-export default class CancelablePromise<T> extends Promise<T> {
+export default class CancelablePromise<T> {
   private cancelHandler: CancelHandler = reason => {}
   private isPending: boolean
   private promise: Promise<T>
@@ -18,7 +18,6 @@ export default class CancelablePromise<T> extends Promise<T> {
       arg2: (handler: any) => void
     ): void
   }) {
-    super(function(resolve, reject) {})
     this.isPending = true
     this.isCanceled = false
 

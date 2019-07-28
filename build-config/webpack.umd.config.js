@@ -1,11 +1,10 @@
 module.exports = {
   entry: {
-    index: './src/index.ts'
+    index: './src/animate-vanilla-js.ts'
   },
   output: {
     filename: 'animate-vanilla-js-umd.js',
     libraryTarget: 'umd',
-    library: 'animate-vanilla-js',
-    umdNamedDefine: true
+    library: 'animate-vanilla-js'
   }
 }

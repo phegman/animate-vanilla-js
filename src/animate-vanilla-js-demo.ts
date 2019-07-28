@@ -1,7 +1,7 @@
 ///<reference types="webpack-env" />
 
 require('./sass/app.scss')
-import animate from './index'
+import animate from './animate-vanilla-js'
 
 function addEventListenerMulti(
   element: Element | NodeList,
@@ -149,8 +149,8 @@ function animateScrollDemo() {
 }
 
 if (module.hot) {
-  module.hot.accept('./index', () => {
-    const animate = require('./index')
+  module.hot.accept('./animate-vanilla-js', () => {
+    const animate = require('./animate-vanilla-js')
     init()
   })
 }

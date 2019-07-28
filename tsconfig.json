@@ -3,9 +3,9 @@
     "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": true,
-    "module": "es6",
-    "allowJs": true,
-    "target": "es6"
-  },
-  "transpileOnly": true
+    "target": "es5",
+    "downlevelIteration": true,
+    "lib": ["es5", "es6", "dom", "dom.iterable"],
+    "declaration": true
+  }
 }

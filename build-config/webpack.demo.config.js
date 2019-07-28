@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: {
-    index: './src/demo.ts'
+    index: './src/animate-vanilla-js-demo.ts'
   },
   output: {
     filename: 'animate-vanilla-js-demo.js'
