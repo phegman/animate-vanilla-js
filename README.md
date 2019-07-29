@@ -262,7 +262,7 @@ button.addEventListener('click', () => {
 yarn serve
 ```
 
-**Build project for development**
+**Build project for production**
 
 ```sh
 yarn build
