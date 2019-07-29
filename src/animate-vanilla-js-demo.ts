@@ -1,6 +1,7 @@
 ///<reference types="webpack-env" />
 
 require('./sass/app.scss')
+require('es6-promise/auto')
 import animate from './animate-vanilla-js'
 
 function addEventListenerMulti(
@@ -15,7 +16,10 @@ function addEventListenerMulti(
   }
 
   if (NodeList.prototype.isPrototypeOf(element)) {
-    ;[...(<NodeList>element)].forEach(addListeners)
+    const nodeList = <NodeListOf<Element>>element
+    for (let index = 0; index < nodeList.length; ++index) {
+      addListeners(nodeList[index])
+    }
   } else {
     addListeners(<Element>element)
   }
@@ -33,7 +37,10 @@ function removeEventListenerMulti(
   }
 
   if (NodeList.prototype.isPrototypeOf(element)) {
-    ;[...(<NodeList>element)].forEach(removeListeners)
+    const nodeList = <NodeListOf<Element>>element
+    for (let index = 0; index < nodeList.length; ++index) {
+      removeListeners(nodeList[index])
+    }
   } else {
     removeListeners(<Element>element)
   }
@@ -53,7 +60,10 @@ function animateHeightDemo() {
     'easeInOutQuart'
   ]
 
-  document.querySelectorAll('.toggle-features').forEach((button, index) => {
+  const toggleButtons = document.querySelectorAll('.toggle-features')
+
+  for (let index = 0; index < toggleButtons.length; ++index) {
+    const button = toggleButtons[index]
     button.addEventListener('click', () => {
       const features: HTMLElement = <HTMLElement>button.previousElementSibling
 
@@ -91,7 +101,7 @@ function animateHeightDemo() {
         })
       }
     })
-  })
+  }
 }
 
 function animateScrollDemo() {

@@ -36,5 +36,8 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "dependencies": {
+    "es6-promise": "^4.2.8"
   }
 }
