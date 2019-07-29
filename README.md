@@ -10,6 +10,8 @@ A tiny promise based animation function implemented in vanilla JavaScript.
 - ⚙ **Uses requestAnimationFrame**
 - 🙅‍♂️ **Cancelable**
 
+## [Demo](https://animate-vanilla-js.peterhegman.com/)
+
 ## Installation
 
 ### Module bundler (e.g. Webpack)
