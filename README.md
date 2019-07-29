@@ -49,7 +49,7 @@ The animation function will then be usable via the global function `animateVanil
 ### Basic Usage
 
 ```typescript
-import animate from './index'
+import animate from 'animate-vanilla-js'
 
 animate(
   0, // from
@@ -69,7 +69,7 @@ animate(
 ### Canceling animations
 
 ```typescript
-import animate from './index'
+import animate from 'animate-vanilla-js'
 
 const promise = animate(
   0, // from
@@ -99,7 +99,7 @@ promise.then(() => {
 ### Custom easing
 
 ```typescript
-import animate from './index'
+import animate from 'animate-vanilla-js'
 
 animate(
   0, // from
