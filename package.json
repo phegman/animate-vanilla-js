@@ -26,7 +26,7 @@
     "@typescript-eslint/parser": "^1.13.0",
     "autoprefixer": "^9.6.1",
     "css-loader": "^3.1.0",
-    "eslint": "^6.1.0",
+    "eslint": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.0",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^3.0.1",
@@ -45,7 +45,8 @@
   },
   "scripts": {
     "build": "rimraf dist && webpack --mode production && mv dist/animate-vanilla-js.d.ts dist/animate-vanilla-js-umd.d.ts",
-    "serve": "webpack-dev-server --hot --inline --mode development"
+    "serve": "webpack-dev-server --hot --inline --mode development",
+    "lint": "./node_modules/.bin/eslint src/**/*.ts"
   },
   "husky": {
     "hooks": {
