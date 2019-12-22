@@ -3,6 +3,7 @@
   "version": "1.0.10",
   "description": "An vanilla js implementation of a function to animate an element",
   "main": "dist/animate-vanilla-js-umd.js",
+  "types": "dist/animate-vanilla-js-umd.d.ts",
   "author": "Peter Hegman",
   "license": "MIT",
   "keywords": [
